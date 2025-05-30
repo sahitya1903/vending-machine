@@ -1,0 +1,103 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Mon Nov  4 15:08:50 2024
+| Host         : Mi_NB_Ultra running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Module_control_sets_placed.rpt
+| Design       : Top_Module
+| Device       : xc7s50
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   150 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |    19 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           11 |
+| No           | No                    | Yes                    |              13 |            8 |
+| No           | Yes                   | No                     |              78 |           23 |
+| Yes          | No                    | No                     |              12 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              23 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|      Clock Signal      |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG         | VM/out_of_stock[3]_i_2_n_0 | VM/out_of_stock[2]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/out_of_stock[3]_i_2_n_0 | VM/out_of_stock[0]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/out_of_stock[3]_i_2_n_0 | VM/out_of_stock[3]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/out_of_stock[3]_i_2_n_0 | VM/out_of_stock[1]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/products[2]_i_1_n_0     | dbn1/d2/SR[0]              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/products[0]_i_1_n_0     | dbn1/d2/SR[0]              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/products[3]_i_2_n_0     | dbn1/d2/SR[0]              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/products[1]_i_1_n_0     | dbn1/d2/SR[0]              |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/stock0                  | VM/stock0[3]_i_1_n_0       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/stock1                  | VM/stock1[3]_i_1_n_0       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/stock2                  | VM/stock2[3]_i_1_n_0       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG         | VM/stock3                  | VM/stock3[3]_i_1_n_0       |                1 |              1 |         1.00 |
+|  dbn1/u1/clk_out_reg_0 |                            |                            |                1 |              3 |         3.00 |
+|  dbn2/u1/clk_out_reg_0 |                            |                            |                1 |              3 |         3.00 |
+|  dbn3/u1/clk_out_reg_0 |                            |                            |                1 |              3 |         3.00 |
+|  clk_IBUF_BUFG         | VM/stock0                  |                            |                1 |              3 |         3.00 |
+|  clk_IBUF_BUFG         | VM/stock1                  |                            |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG         | VM/stock2                  |                            |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG         | VM/stock3                  |                            |                1 |              3 |         3.00 |
+|  clk_IBUF_BUFG         | VM/money[1]_i_1_n_0        | reset_IBUF                 |                3 |             11 |         3.67 |
+|  SSD/segclk_reg[12]    |                            | dbn1/d2/deb_btn1           |                8 |             13 |         1.62 |
+|  clk_IBUF_BUFG         |                            |                            |                8 |             19 |         2.38 |
+|  clk_IBUF_BUFG         |                            | dbn1/u1/clk_out            |                8 |             26 |         3.25 |
+|  clk_IBUF_BUFG         |                            | dbn2/u1/clk_out            |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG         |                            | dbn3/u1/clk_out            |                8 |             26 |         3.25 |
++------------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+
+

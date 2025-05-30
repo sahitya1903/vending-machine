@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Nov  4 15:06:19 2024
+# Process ID: 3052
+# Current directory: D:/Vivado Projects/vending_machine/vending_machine.runs/synth_3
+# Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+# Log file: D:/Vivado Projects/vending_machine/vending_machine.runs/synth_3/Top_Module.vds
+# Journal file: D:/Vivado Projects/vending_machine/vending_machine.runs/synth_3\vivado.jou
+# Running On        :Mi_NB_Ultra
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz
+# CPU Frequency     :3187 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16952 MB
+# Swap memory       :1073 MB
+# Total Virtual     :18026 MB
+# Available Virtual :8626 MB
+#-----------------------------------------------------------
+source Top_Module.tcl -notrace

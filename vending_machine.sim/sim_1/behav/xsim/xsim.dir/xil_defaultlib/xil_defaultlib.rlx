@@ -1,0 +1,13 @@
+0.7
+2020.2
+Sep  5 2024
+15:23:16
+D:/Vivado Projects/vending_machine/vending_machine.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/Binary_to_BCD.v,1730016436,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/D_FF.v,,Binary_to_BCD,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/D_FF.v,1730279333,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/Slow_Clock_4Hz.v,,D_FF,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/Slow_Clock_4Hz.v,1730016091,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/debounce.v,,Slow_Clock_4Hz,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/Top_Module.v,1730018442,verilog,,,,Top_Module,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/debounce.v,1730279641,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/decoder_7segment.v,,Debounce,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/decoder_7segment.v,1730279129,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/driver_7segment.v,,decoder_7segment,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/driver_7segment.v,1730016372,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/vending_machine.v,,driver_7segment,,,,,,,,
+D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/vending_machine.v,1730016356,verilog,,D:/Vivado Projects/vending_machine/vending_machine.srcs/sources_1/new/Top_Module.v,,vending_machine,,,,,,,,

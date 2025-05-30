@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vending_machine.srcs/sources_1/new/Binary_to_BCD.v" \
+"../../../../vending_machine.srcs/sources_1/new/D_FF.v" \
+"../../../../vending_machine.srcs/sources_1/new/Slow_Clock_4Hz.v" \
+"../../../../vending_machine.srcs/sources_1/new/debounce.v" \
+"../../../../vending_machine.srcs/sources_1/new/decoder_7segment.v" \
+"../../../../vending_machine.srcs/sources_1/new/driver_7segment.v" \
+"../../../../vending_machine.srcs/sources_1/new/vending_machine.v" \
+"../../../../vending_machine.srcs/sources_1/new/Top_Module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
