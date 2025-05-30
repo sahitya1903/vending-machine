@@ -9,13 +9,6 @@ A Verilog-based vending machine project built for FPGA implementation using **Xi
 - Binary to BCD conversion
 - 7-segment display driver
 
-## 📁 Files
-- `vending_machine.v` – FSM logic  
-- `Top_Module.v` – Integration top  
-- `debounce.v`, `D_FF.v` – Input handling  
-- `Slow_Clock_4Hz.v` – Clock divider  
-- `Binary_to_BCD.v`, `decoder_7segment.v`, `driver_7segment.v` – Display logic
-
 ## 🚀 Run
 Open `vending_machine.xpr` in Vivado → Synthesize → Implement → Generate Bitstream → Upload to FPGA.
 
