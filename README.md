@@ -12,7 +12,7 @@ A Verilog-based vending machine project built for FPGA implementation using **Xi
 ## 🚀 Run
 Open `vending_machine.xpr` in Vivado → Synthesize → Implement → Generate Bitstream → Upload to FPGA.
 
-## Docs
+## 📃 Docs
 Read report.docx and vending machine.pptx in docs folder for better understanding of the project.
 
 ## 🛠️ Tools
