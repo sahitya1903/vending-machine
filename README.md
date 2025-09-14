@@ -1,30 +1,45 @@
-## How to Rebuild the Project
-- This project was created in Xilinx Vivado for the FPGA XC7S50-CSGA324-1 (Spartan-7).
-- The repository is kept clean using a reproducible Tcl project script instead of committing bulky Vivado files.
+# 🥤 FSM-Based Electronic Vending Machine (FPGA)
 
-## Prerequisites
-- Install Xilinx Vivado (any recent version supporting Spartan-7)
-- Ensure vivado is available in your system path
+An **FSM-based electronic vending machine** designed and implemented on the **Xilinx Spartan-7 (XC7S50-CSGA324-1)** FPGA.  
+The project is structured for reproducibility, using a **Tcl script** to regenerate the Vivado project instead of storing bulky files.
 
-## Steps to Rebuild
-- Clone the repository
+---
+
+## ✨ Features
+- **Finite State Machine (FSM) Design** for controlling vending operations  
+- Modular **Verilog HDL** implementation  
+- **Debouncing logic** for stable input handling  
+- **Binary-to-BCD conversion** for display interface  
+- **7-segment driver** for real-time user feedback  
+- Clean reproducible build setup using **Vivado Tcl script**  
+
+---
+
+## 🛠️ Prerequisites
+- [Xilinx Vivado](https://www.xilinx.com/support/download.html) (any version supporting Spartan-7)  
+- Ensure `vivado` is accessible in your system PATH  
+
+---
+
+## ⚡ How to Rebuild the Project
+- Clone the repository:
 ```bash
 git clone https://github.com/sahitya1903/vending-machine.git
 cd vending-machine
 ```
-- Rebuild the Vivado project using the Tcl script
+- Rebuild the Vivado project:
 ```bash
 vivado -mode batch -source vending_machine.tcl
 ```
-- Open the project in Vivado (GUI mode)
-- Launch Vivado
-- Navigate to File → Open Project
-- Select the regenerated project file:
+- Open the project in Vivado GUI:
+- - Launch Vivado
+  - Go to File → Open Project
+  - Select:
 ```bash
 vending_machine/vending_machine.xpr
 ```
-## Repository Structure
-```php
+## 📂 Repository Structure
+```bash
 vending-machine/
 ├── constrs/               # Constraint files (pin mappings, clocks, etc.)
 │   └── boolean.xdc
@@ -42,3 +57,10 @@ vending-machine/
 ├── README.md
 └── .gitignore
 ```
+## 🎯 Project Highlights
+- Implements a real-world vending machine logic using FSM
+- Demonstrates digital design concepts: debouncing, clock division, display interfacing
+- Scalable and modular HDL structure for academic and hobby projects
+
+## 📜 License
+This project is licensed under the MIT License – free to use, modify, and distribute.
