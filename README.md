@@ -1,26 +1,21 @@
-🔧 How to Rebuild the Project
+## How to Rebuild the Project
+- This project was created in Xilinx Vivado for the FPGA XC7S50-CSGA324-1 (Spartan-7).
+- The repository is kept clean using a reproducible Tcl project script instead of committing bulky Vivado files.
 
-This project was created in Xilinx Vivado for the FPGA XC7S50-CSGA324-1 (Spartan-7).
-The repository is kept clean using a reproducible Tcl project script instead of committing bulky Vivado files.
-
-Prerequisites
+## Prerequisites
 - Install Xilinx Vivado (any recent version supporting Spartan-7)
 - Ensure vivado is available in your system path
 
-Steps to Rebuild
-
+## Steps to Rebuild
 - Clone the repository
-
 ```bash
-git clone https://github.com/<your-username>/vending-machine.git
+git clone https://github.com/sahitya1903/vending-machine.git
 cd vending-machine
 ```
-
 - Rebuild the Vivado project using the Tcl script
 ```bash
 vivado -mode batch -source vending_machine.tcl
 ```
-
 - Open the project in Vivado (GUI mode)
 - Launch Vivado
 - Navigate to File → Open Project
@@ -28,8 +23,8 @@ vivado -mode batch -source vending_machine.tcl
 ```bash
 vending_machine/vending_machine.xpr
 ```
-
-📂 Repository Structure
+## Repository Structure
+```php
 vending-machine/
 ├── constrs/               # Constraint files (pin mappings, clocks, etc.)
 │   └── boolean.xdc
@@ -46,4 +41,4 @@ vending-machine/
 ├── LICENSE
 ├── README.md
 └── .gitignore
-
+```
