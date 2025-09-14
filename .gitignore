@@ -1,0 +1,26 @@
+# Ignore Vivado project files and junk
+
+# Vivado generated folders
+*.runs/
+*.sim/
+*.cache/
+*.Xil/
+*.hw/
+*.ip_user_files/
+*.gen/
+*.ipdefs/
+
+# Vivado logs and reports
+*.jou
+*.log
+*.rpt
+*.str
+*.pb
+*.wdb
+
+# Vivado backup and temp
+*.backup*
+*.tmp
+
+# Project file (we use Tcl instead)
+*.xpr
